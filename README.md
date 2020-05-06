@@ -3,7 +3,7 @@ Here you will find the release versions of <b>Medusa (an adult jellyfish)</b>, a
 ## Installation
 The current release (0.16b) which supports only Windows 64-bit machines.  
 Click the green clone button (top righton this page) to Download-ZIP, and save a copy of Medusa-master on your local machine.
-Extract the zipped file and a Medusa-master folder will be created.  Change into this folder and start the Medusa.exe program.  
+Extract the zip file and a Medusa-master folder will be created.  Change into this folder and start the Medusa.exe program.  
 Once Medusa starts select <b>[HELP]</b> and follow the Quick-Start Guide to see it in action.  Example Answer and Results files are provided to explore how Medusa works.  
 
 >It is essential that the <b>FeedbackReport.html</b> and the <b>Help Folder</b> are locatd in the same directory as the <b>Medusa.exe</b> program.  
