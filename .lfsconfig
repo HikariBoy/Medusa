@@ -1,3 +1,2 @@
 [lfs]
-	url = https://github.com/HikariBoy/Medusa.git/info/lfs
 	fetchinclude = *.exe,*
