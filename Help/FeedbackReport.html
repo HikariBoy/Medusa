@@ -1,0 +1,25 @@
+<head></head>
+<body>
+    <h1>Feedback on {{ Test_Title }}</h1>
+	<h2>Name: {{ Name }} ({{ UserID }})</h2>
+<b>Date: </b>{{ GradedDate }} <br>
+<h3><b>You received a grade of </b>{{ Grade  }} out of {{ GradeTotal  }} ({{Gradepc}}%) </h3>
+            {% for q in Qn  %}
+
+				     <p style="color:blue;"> <b> QUESTION# {{loop.index}}: {{ q }} </b></p>
+         {% set item_1 = SectionPart[loop.index-1] %}
+		{% for elem in item_1%}
+{{ elem }}<br>
+        {% endfor %}
+		<div align="right"><b>Section SubTotal={{SectionGrade[loop.index-1]}}/{{SectionPossible[loop.index-1]}}</b></div>
+		        {% endfor %}
+
+
+    <h1>Personalised Histogram {{ Hist_Title }}</h1>
+	<img src="{{ UserID }}.png"  alt="Histogram" >  
+	<h2>Statistics of interest </h2>
+<b>The mean, &mu;, of the test was </b> {{ Mean}}% 	<br>
+<b>The standard deviation of,&sigma;, the test was </b> {{ Stddev}}%	 (this provides a measure of the spread of the results)<br>
+<b>The median of the test was </b> {{ Median}}%	 (the median grade indicates that half the stduents were below this grade and half were above)
+
+</body>
